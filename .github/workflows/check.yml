@@ -1,0 +1,8 @@
+# Проверка, что GitHub Actions работают на этом аккаунте
+name: Check runners
+on: [push, workflow_dispatch]
+jobs:
+  linux:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Linux runner OK"
